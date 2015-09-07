@@ -7,3 +7,6 @@ services:
 
 script:
   - docker build -t sonarsource/local-travis .
+
+notifications:
+  email: false
