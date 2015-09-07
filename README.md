@@ -95,7 +95,7 @@ Here are the steps to follow to run a build with Docker:
     The file will, most of the time, be as simple as:
 
     ```Dockerfile
-    FROM dgageot/travis-docker
+    FROM sonarsource/local-travis
     ```
 
  3. Build the docker image. The image will then contain both your sources and
