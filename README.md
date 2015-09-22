@@ -151,7 +151,7 @@ all the maven dependencies (You know that "Maven downloads the Internet" thing).
 One way of fixing that is to share your own `.m2` repository with the container:
 
 ```bash
-docker run -ti -v $HOME/.m2/:/root/.m2/ -e JOB=CI ci ./travis.sh
+docker run -ti -e DEV_UID=$(id -u) -e DEV_GID=$(id -g) -v $HOME/.m2/:/root/.m2/ -e JOB=CI ci ./travis.sh
 ```
 
 This is **good** because the build will be faster and use less bandwidth.
