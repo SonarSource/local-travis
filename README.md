@@ -159,6 +159,16 @@ This is **bad** because you might have something in that repository that shouldn
 be here, a SNAPSHOT dependency for example, and the build might pass on
 your machine and fail on Travis.
 
+## How to maintain this image
+
+This docker image doesn't contain everything that is installed on a Travis agent.
+Only what's needed by most Java build is installed.
+
+Finding the right components to install was done mainly by trial and error.
+
+On each commit to this repository, the docker image is rebuilt and published
+on [Docker Hub][hub] automatically.
+
 [travis]: https://travis-ci.org/
 [travis-sonarsource]: https://travis-ci.org/SonarSource
 [sonarsource]: https://github.com/SonarSource
@@ -167,3 +177,4 @@ your machine and fail on Travis.
 [enable]: http://docs.travis-ci.com/user/getting-started/
 [docker]: https://www.docker.com/
 [install]: https://docs.docker.com/
+[hub]: https://hub.docker.com/r/sonarsource/local-travis/builds/
