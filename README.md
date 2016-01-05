@@ -96,6 +96,7 @@ Here are the steps to follow to run a build with Docker:
 
     ```Dockerfile
     FROM sonarsource/local-travis
+    ADD . /home/travis
     ```
 
  3. Build the docker image. The image will then contain both your sources and
