@@ -179,3 +179,9 @@ on [Docker Hub][hub] automatically.
 [docker]: https://www.docker.com/
 [install]: https://docs.docker.com/
 [hub]: https://hub.docker.com/r/sonarsource/local-travis/builds/
+
+### License
+
+Copyright 2015-2017 SonarSource.
+
+Licensed under the [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt)
